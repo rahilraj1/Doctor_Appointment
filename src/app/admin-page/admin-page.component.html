@@ -1,0 +1,244 @@
+<section class="admin" [class.admindark]="dark.isDark">
+    <div class="parent">
+        <div class="left-bar">
+            <img src="../../assets/Frame.svg" alt="" class="icons" width="30px">
+            <img src="../../assets/Frame (1).svg" alt="" class="icons" width="30px">
+            <img src="../../assets/Frame (2).svg" alt="" class="icons" width="30px">
+            <img src="../../assets/Frame (3).svg" alt="" class="icons" width="30px">
+            <img src="../../assets/Frame (4).svg" alt="" class="icons" width="30px">
+            <img src="../../assets/Frame (5).svg" alt="" class="icons last-icon" width="30px" routerLink="">
+
+        </div>
+        <div class="right">
+            <div class="navbar">
+                <div class="left-nav">
+                    <input type="text" class="search" placeholder="Search">
+                    <mat-icon class="search-icon">search</mat-icon>
+                </div>
+                <div class="right-nav">
+                    <mat-icon class="right-icon icon1">chat_bubble</mat-icon>
+                    <mat-icon class="right-icon icon2">notifications</mat-icon>
+                    <mat-icon class="dark" (click)="onDark()" *ngIf="isDark==false">dark_mode</mat-icon>
+                    <mat-icon class="light" (click)="onDark()" *ngIf="isDark==true">light_mode</mat-icon>
+                    <div class="profile">
+                        <img src="../../assets/Ellipse 38.svg" alt="" class="admin-pic">
+                        <span class="admin-name">Dr. Kim</span>
+                    </div>
+                </div>
+            </div>
+            <div class="right-content">
+                <div class="left-content">
+                    <span class="heading">Good Morning <span class="name">Dr. Kim !</span></span>
+                    <div class="details">
+                        <div class="details-left">
+                            <span class="visit">Visits For Today</span>
+                            <span class="number">104</span>
+                            <div class="numbers">
+                                <div class="card">
+                                    <span class="card-heading">New Patients</span>
+                                    <span class="card-number">40</span>
+                                    <div class="graph">
+                                        <span class="graph-num">51%</span>
+                                        <img src="../../assets/green_stock.svg" alt="" class="graph-icon">
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <span class="card-heading">Old Patients</span>
+                                    <span class="card-number">64</span>
+                                    <div class="graph graph2">
+                                        <span class="graph-num">20%</span>
+                                        <img src="../../assets/Group 1000000904.svg" alt="" class="graph-icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="details-right">
+                            <img src="../../assets/unsplash_7bMdiIqz_J4.png" alt="" class="doctor-img">
+                        </div>
+                    </div>
+                    <div class="left-content-2">
+                        <div class="content-1">
+                            <div class="headingContent-1">
+                                <span class="heading-patient">Patient List</span>
+                                <span class="dropdown">Today</span>
+                            </div>
+                            <div class="patient-list">
+                                <div class="patient pat1">
+                                    <div class="patient-details">
+                                        <div class="border-here">
+                                            <div class="code">SM</div>
+                                        </div>
+
+                                        <div class="name">
+                                            <span class="patient-name">Stacy Mitchell</span>
+                                            <span class="visit">Weekly Visit</span>
+                                        </div>
+                                    </div>
+                                    <div class="time">9:45 A.M</div>
+                                </div>
+                                <div class="patient pat2">
+                                    <div class="patient-details">
+                                        <div class="border-here">
+                                            <div class="code">AD</div>
+                                        </div>
+                                        <div class="name">
+                                            <span class="patient-name">Amy Dulham</span>
+                                            <span class="visit">Routine Checkup</span>
+                                        </div>
+                                    </div>
+                                    <div class="time">9:45 A.M</div>
+                                </div>
+                                <div class="patient pat3">
+                                    <div class="patient-details">
+                                        <div class="border-here">
+                                            <div class="code">SM</div>
+                                        </div>
+                                        <div class="name">
+                                            <span class="patient-name">Demi Joan</span>
+                                            <span class="visit">Report</span>
+                                        </div>
+                                    </div>
+                                    <div class="time">9:45 A.M</div>
+                                </div>
+                                <div class="patient">
+                                    <div class="patient-details">
+                                        <div class="border-here">
+                                            <div class="code">SM</div>
+                                        </div>
+
+                                        <div class="name">
+                                            <span class="patient-name">Susan Mayers</span>
+                                            <span class="visit">Weekly Visit</span>
+                                        </div>
+                                    </div>
+                                    <div class="time">9:45 A.M</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-2">
+                            <div class="headingContent-1">
+                                <span class="heading-cons">Consultation</span>
+                                <div class="under-border">
+                                    <div class="detail-pat">
+                                        <div class="border-here">
+                                            <div class="code">DW</div>
+                                        </div>
+                                        <div class="patient-name">
+                                            <span class="name">Denzel White</span>
+                                            <span class="dob">Male-28 Years 3 Months</span>
+                                        </div>
+                                    </div>
+                                    <div class="logo-dis">
+                                        <div class="single-logo">
+                                            <img src="../../assets/Group.svg" alt="" class="icon1">
+                                            <span class="disease">Fever</span>
+                                        </div>
+                                        <div class="single-logo">
+                                            <img src="../../assets/Group (1).svg" alt="" class="icon1">
+                                            <span class="disease">Cough</span>
+                                        </div>
+                                        <div class="single-logo">
+                                            <img src="../../assets/Group (2).svg" alt="" class="icon1">
+                                            <span class="disease">Heart Burn</span>
+                                        </div>
+                                    </div>
+                                    <hr class="horiz">
+                                    <div class="checkup">
+                                        <div class="last">
+                                            <span class="last-checkup">Last Checkup</span>
+                                            <div class="doneby">
+                                                <div class="dates"><span class="drname">Dr. Everly</span>on 21 April 2021 Prescription</div>
+                                            </div>
+                                        </div>
+                                        <div class="last mt12">
+                                            <span class="last-checkup">Observation</span>
+                                            <div class="doneby">
+                                                <div class="dates">High fever and cough at normal hemoglobin levels. </div>
+                                            </div>
+                                        </div>
+                                        <div class="last mt12">
+                                            <span class="last-checkup">Prescription</span>
+                                            <div class="doneby">
+                                                <div class="dates">Paracetmol - 2 times a day
+                                                    Dizopam - Day and Night before meal
+                                                    Wikoryl</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="patient">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-content">
+                    <div class="first-component">
+                         <div class="datepicker">
+                            <div class="datepicker-top">
+                                <div class="btn-group">
+                                    <button class="tag">Today</button>
+                                    <button class="tag">Tomorrow</button>
+                                </div>
+                                <div class="month-selector">
+                                    <button class="arrow"><i class="material-icons">chevron_left</i></button>
+                                    <span class="month-name">October 2023</span>
+                                    <button class="arrow"><i class="material-icons">chevron_right</i></button>
+                                </div>
+                            </div>
+                            <div class="datepicker-calendar">
+                                <span class="day">Mo</span>
+                                <span class="day">Tu</span>
+                                <span class="day">We</span>
+                                <span class="day">Th</span>
+                                <span class="day">Fr</span>
+                                <span class="day">Sa</span>
+                                <span class="day">Su</span>
+                                <button class="date faded">30</button>
+                                <button class="date">1</button>
+                                <button class="date">2</button>
+                                <button class="date">3</button>
+                                <button class="date">4</button>
+                                <button class="date">5</button>
+                                <button class="date">6</button>
+                                <button class="date">7</button>
+                                <button class="date">8</button>
+                                <button class="date current-day">9</button>
+                                <button class="date">10</button>
+                                <button class="date">11</button>
+                                <button class="date">12</button>
+                                <button class="date">13</button>
+                                <button class="date">14</button>
+                                <button class="date">15</button>
+                                <button class="date">16</button>
+                                <button class="date">17</button>
+                                <button class="date">18</button>
+                                <button class="date">19</button>
+                                <button class="date">20</button>
+                                <button class="date">21</button>
+                                <button class="date">22</button>
+                                <button class="date">23</button>
+                                <button class="date">24</button>
+                                <button class="date">25</button>
+                                <button class="date">26</button>
+                                <button class="date">27</button>
+                                <button class="date">28</button>
+                                <button class="date">29</button>
+                                <button class="date">30</button>
+                                <button class="date">31</button>
+                                <button class="date faded">1</button>
+                                <button class="date faded">2</button>
+                                <button class="date faded">3</button>
+                            </div>
+                        </div> 
+                    </div>
+                   <div class="second-component">
+                    <span class="second-comp-daily"><img src="../../assets/Ellipse 40.svg" alt="" class="circle">Daily Read</span>
+                    <span class="second-comp-headline">Equitable medical education with efforts toward real change</span>
+                    <img src="../../assets/Rectangle 39896.png" alt="" class="second-img">
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

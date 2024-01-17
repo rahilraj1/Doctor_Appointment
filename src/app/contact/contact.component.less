@@ -1,0 +1,313 @@
+@lexend-ff: 'Lexend Tera', sans-serif;
+@lato-ff: 'Lato', sans-serif;
+@poppin-ff: 'Poppins', sans-serif;
+@Sans-ff: 'DM Sans', sans-serif;
+@blue-color: #007E85;
+@green-color: #6EAB36;
+@bg-light: #ECECEC;
+
+.contact {
+    display: flex;
+    justify-content: center;
+    background-color: @bg-light;
+    .parent {
+        max-width: 1440px;
+        width: 100%;
+        background-color: @bg-light;
+
+        .contact-img {
+            width: 100%;
+
+            .img-here {
+                width: 100%;
+            }
+        }
+
+        .contact-headings {
+            width: 100%;
+            margin-top: 110px;
+            font-family: @Sans-ff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .mini-heading {
+                font-size: 21.33px;
+                font-weight: 700;
+                line-height: 32px;
+                color: #282938;
+            }
+
+            .heading {
+                font-size: 64px;
+                line-height: 76.8%;
+                color: #333;
+                margin-top: 10px;
+                margin-bottom: 32px;
+            }
+
+            .text {
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 36px;
+                color: #555;
+                margin-bottom: 64px;
+            }
+        }
+
+        .contact-form {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 149px;
+            .form-here {
+                width: 71.12%;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .inp-label {
+                    width: 48.43%;
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 32px;
+                    .name {
+                        width: 100%;
+                        margin-bottom: 10.67px;
+                        font-family: @Sans-ff;
+                        font-size: 21.33px;
+                        font-weight: 400;
+                        line-height: 32px;
+                        color:#282938;
+                    }
+                    .name-inp
+                    {
+                        padding: 15.667px 248px 16.333px 19px;
+                        border:1.333px solid @blue-color;
+                        border-radius: 8px;
+                        background: transparent;
+                        
+                    }
+                    .name-inp::placeholder
+                        {
+                            font-family: @Sans-ff;
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+                }
+                .drop-label
+                {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    .topics
+                    {
+                        width: 100%;
+                        margin-bottom: 10.67px;
+                        font-family: @Sans-ff;
+                        font-size: 21.33px;
+                        font-weight: 400;
+                        line-height: 32px;
+                        color:#282938;
+                    }
+                    .options
+                    {
+                        border:1px solid @blue-color;
+                        padding: 16px 16px 15.667px 16px;
+                        font-family: @Sans-ff;
+                        font-size: 16px;
+                        font-weight: 400;
+                        opacity: 0.7;
+                        margin-bottom: 32px;
+                        border-radius: 8px;
+                        background: transparent;
+                    }
+                    .text-area
+                    {
+                        border:1.33px solid @blue-color;
+                        padding: 16px;
+                        margin-bottom: 32px;
+                        background: transparent;
+                        border-radius: 8px;
+                    }
+                    .text-area::placeholder
+                    {
+                        font-family: @Sans-ff;
+                        font-size: 16px;
+                        font-weight: 400;
+                    }
+                }
+                .accept
+                {
+                    margin-bottom: 32px;
+                    display: flex;
+                    align-items: center;
+                    .check-box
+                    {
+                        background: transparent;
+                    }
+                    .text
+                    {
+                        margin-left: 8px;
+                        font-style: 18.57px;
+                        font-weight: 400;
+                        color:#282938;
+                    }
+                }
+                .submit
+                {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    .btn
+                    {
+                        padding: 19px 0px;
+                        border-radius: 8px;
+                        border:1px solid @blue-color;
+                        background-color: @blue-color;
+                        color:#fff;
+                        font-family: @Sans-ff;
+                        font-size: 23.33px;
+                        font-weight: 500;
+                        width: 386px;
+                        cursor: pointer;
+                        transition: all 0.2s;
+                        &:hover
+                        {
+                            background: transparent;
+                            color:@blue-color;
+                        }
+                        &:focus
+                        {
+                            background:#555;
+                            color:#fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.contentdark
+{
+    .contact;
+    background-color: black;
+    .parent
+    {
+        background-color: black;
+        .contact-headings
+        {
+            .mini-heading
+            {
+                color:#ffffffbf;
+            }
+            .heading
+            {
+                color:#fff;
+            }
+            .text
+            {
+                color:#ffffffbf;
+            }
+        }
+        .contact-form
+        {
+            .form-here
+            {
+                .inp-label
+                {
+                    .name
+                    {
+                        color:#fff;
+                    }
+                }
+                .drop-label
+                {
+                    .topics
+                    {
+                        color:#fff;
+                    }
+                    .topic::placeholder
+                    {
+                        color:white;
+                    }
+                }
+            }
+        }
+    }
+}
+.main-parent
+{
+    display: flex;
+    justify-content: center;
+    background-color: @bg-light;
+    .parent2
+    {
+        max-width: 1440px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 59px;
+        .content
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .heading
+        {
+            color:#555;
+            font-size: 28px;
+            font-family: @Sans-ff;
+            font-weight: 700;
+            margin-bottom: 11.5px;
+        }
+        .input-div
+        {
+            display: flex;
+            .inp
+            {
+                padding: 14px 24px;
+                width: 419px;
+                border-radius: 50px;
+                border:none;
+                background-color: white;
+            }
+            .subscribe
+            {
+                margin-left: 24px;
+                border-radius: 30px;
+                border:1px solid @blue-color;
+                background-color: @blue-color;
+                color:white;
+                padding: 18px 24px;
+                transition: all 0.2s;
+                cursor: pointer;
+                &:hover
+                {
+                    background: transparent;
+                    color:@blue-color;
+                }
+                &:focus
+                {
+                    background-color: #555;
+                    color:#fff;
+                }
+            }
+        }
+        }
+    }
+}
+.main-parentdark
+{
+    .main-parent;
+    background-color: black;
+    .parent2{
+        background-color: black;
+        .content
+        {
+            background-color: black;
+            .heading
+            {
+                color:#fff;
+            }
+        }
+    }
+}

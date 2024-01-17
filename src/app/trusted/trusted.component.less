@@ -1,0 +1,133 @@
+@Sans-ff: 'DM Sans', sans-serif;
+@blue-color: #007E85;
+@green-color: #6EAB36;
+@bg-light: #ECECEC;
+
+.trusted
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: @bg-light;
+    .parent
+    {
+        max-width: 1440px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .headings
+        {
+            margin-top: 96px; 
+            margin-bottom: 48px;
+            font-family: @Sans-ff;
+            font-size: 36px;
+            color:@blue-color;
+            font-weight: 700;
+            @media(max-width:1025px)
+            {
+                font-size: 28px;
+                text-align: center;
+                line-height: 32px;
+            }
+        }
+        .cards
+        {
+            width: 84.73%;
+            display: flex;
+            justify-content: space-between;
+            .card
+            {
+                width: 12%;
+                .card-icon
+                {
+                    width: 100%; 
+                }
+                .card-pint
+                {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .parent2
+    {
+        max-width: 1440px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 60px;
+        margin-bottom: 59px;
+        .content
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .heading
+        {
+            color:#555;
+            font-size: 28px;
+            font-family: @Sans-ff;
+            font-weight: 700;
+            margin-bottom: 11.5px;
+            @media(max-width:1025px)
+            {
+                margin-bottom: 24px;
+            }
+        }
+        .input-div
+        {
+            display: flex;
+            .inp
+            {
+                padding: 14px 24px;
+                width: 419px;
+                border-radius: 50px;
+                border:none;
+                background-color: white;
+            }
+            .subscribe
+            {
+                margin-left: 24px;
+                border-radius: 30px;
+                border:1px solid @blue-color;
+                background-color: @blue-color;
+                color:white;
+                padding: 18px 24px;
+                transition: all 0.2s;
+                cursor: pointer;
+                &:hover
+                {
+                    background: transparent;
+                    color:@blue-color;
+                }
+                &:focus
+                {
+                    background-color: #555;
+                    color:#fff;
+                }
+            }
+            @media(max-width:768px)
+            {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .inp
+                {
+                    width: 300px;
+                }
+                .subscribe
+                {
+                    margin-top: 16px;
+                }
+            }
+        }
+        }
+    }
+    
+}
+.trusteddark
+{
+    .trusted;
+    background-color: black;
+}

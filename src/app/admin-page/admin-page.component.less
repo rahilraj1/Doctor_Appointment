@@ -1,0 +1,864 @@
+@lexend-ff: 'Lexend Tera', sans-serif;
+@lato-ff: 'Lato', sans-serif;
+@poppin-ff: 'Poppins', sans-serif;
+@Sans-ff: 'DM Sans', sans-serif;
+@blue-color: #007E85;
+@green-color: #6EAB36;
+@bg-light: #ECECEC;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+
+.admin
+{
+    display: flex;
+    justify-content: center;
+    background-color: @blue-color;
+    .parent
+    {
+        max-width: 1440px;
+        width: 100%;
+        display: flex;
+        .left-bar
+        {
+            width: 9.097%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 86.39px;
+            .icons
+            {
+                margin-bottom: 61.39px;
+                cursor: pointer;
+            }
+            .last-icon
+            {
+                margin-bottom: 0;
+            }
+        }
+        .right
+        {
+            width: 90.90%;
+            background-color: #F8F8F8;;
+            margin: 3px;
+            border-radius: 35px 0px 0px 35px;
+            padding: 36.87px 40.97px;
+            .navbar
+            {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                .left-nav
+                {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    .search
+                    {
+                        width: 692px;
+                        height: 57px;
+                        border-radius: 16.386px;
+                        background-color: #E5E5E5;
+                        padding-left: 24px;
+                        border:1px solid #E5E5E5;
+                    }
+                    .search::placeholder
+                    {
+                        font-family: @poppin-ff;
+                        font-weight: 500;
+                    }
+                    .search-icon
+                    {
+                        position: absolute;
+                        right: 2%;
+                        top: 30%;
+                        opacity: 0.4;
+                        cursor: pointer;
+                        transition: all 0.2s;
+                        &:hover
+                        {
+                            opacity: 1;
+                        }
+                    }
+                }
+                .right-nav
+                {
+                    display: flex;
+                    align-items: center;
+                    .icon1
+                    {
+                        margin-right: 31px;
+                    }
+                    .icon2
+                    {
+                        margin-right: 41px;
+                    }
+                    .dark
+                    {
+                        cursor: pointer;
+                    }
+                    .light
+                    {
+                        cursor: pointer;
+                        color:#fff;
+                    }
+                    .profile
+                    {
+                        display: flex;
+                        align-items: center;
+                        border:1px solid #E5E5E5;
+                        padding: 4px 14px;
+                        border-radius: 18px;
+                        margin-left: 18px;
+                        .admin-name
+                        {
+                            margin-left: 4px;
+                            font-family: @poppin-ff;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+            .right-content
+            {
+                display: flex;
+                gap: 24px;
+                padding: 33.78px 0px;
+                .left-content
+                {
+                    width: 815.152px;
+                    .heading
+                    {
+                        font-size: 26px;
+                        font-family: @poppin-ff;
+                        font-weight: 400;
+                        margin-bottom: 21.53px !important;
+                        .name
+                        {
+                            font-size: 36px;
+                            font-weight: 700;
+                            color:@blue-color;
+                        }
+                    }
+                    .details
+                    {
+                        width: 100%;
+                        height: 335px;
+                        background-color: @blue-color;
+                        background: linear-gradient(90deg, rgb(136, 189, 192) 25%, rgb(136, 189, 192) 35%, rgb(0, 126, 133) 100%);
+                        display: flex;
+                        justify-content: space-between;
+                        position: relative;
+                        margin-top: 18px;
+                        border-radius: 16px;
+                        .details-left
+                        {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+                            padding: 26px;
+                            .visit
+                            {
+                                font-size: 24.579px;
+                            font-family: @poppin-ff;
+                            font-weight: 500;
+                            }
+                            .number
+                            {
+                                font-size: 64px;
+                                font-weight: 500;
+                                margin-top: 28px;
+                            }
+                            .numbers
+                            {
+                                display: flex;
+                                gap: 30.16px;
+                                .card
+                                {
+                                    display: flex;
+                                    flex-direction: column;
+                                    background-color: #D6E9EA;
+                                    padding: 16px 17px;
+                                    margin-top: 18px;
+                                    border-radius: 18px;
+                                    position: relative;
+                                    .card-heading
+                                    {
+                                        color:#000;
+                                        font-family: @poppin-ff;
+                                        font-size: 16px;
+                                        font-weight: 500;
+                                        margin-bottom: 8px;
+                                    }
+                                    .card-number
+                                    {
+                                        font-size: 36px;
+                                        font-weight: 500;
+                                        margin-top: 10px;
+                                        margin-bottom: 14px;
+                                    }
+                                    .graph
+                                    {
+                                        background-color: #DFFDDD;
+                                        border-radius: 12.46px;
+                                        position: absolute;
+                                        right: -12%;
+                                        bottom:15%;
+                                        padding: 6.6px 15px;
+                                        .graph-num
+                                        {
+                                            color:#008000;
+                                            font-size: 12px;
+                                            font-family: @poppin-ff;
+                                        }
+                                    }
+                                    .graph2
+                                    {
+                                        background-color: #FBC3C3;
+                                        padding: 3.6px 5px;
+                                        position: absolute;
+                                        right: 5%;
+                                        bottom: 24%;
+                                        .graph-num
+                                        {
+                                            font-family: @poppin-ff;
+                                            color:#D30404;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .details-right
+                        {
+                            position: absolute;
+                            top: -15.1%;
+                            right: 0%;
+                        }
+                    }
+                    .left-content-2
+                    {
+                        display: flex;
+                        width: 815.152px;
+                        justify-content: space-between;
+                        margin-top: 25px;
+                        background-color: #FFFFFF;
+                        border-radius: 12px;
+                        .content-1
+                        {
+                            width: 48%;
+                            padding: 24px;
+                            .headingContent-1
+                            {
+                                display: flex;
+                                justify-content: space-between;
+                                .heading-patient
+                                {
+                                    font-size: 24.57px;
+                                    font-family: @poppin-ff;
+                                    font-weight: 500;
+                                }
+                                .dropdown
+                                {
+                                    color: rgba(0, 0, 0, 0.60);
+                                    font-size: 16.38px;
+                                    font-family: @poppin-ff;
+                                    font-weight: 400;
+                                }
+                            }
+                            .patient-list
+                            {
+                                display: flex;
+                                flex-direction: column;
+                                .patient
+                                {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    margin-bottom: 20px;
+                                    .patient-details
+                                    {
+                                        display: flex;
+                                        .border-here
+                                        {
+                                            border:1px solid #FDBCDC;
+                                            border-radius: 25px;
+                                            padding: 2px;
+                                            .code
+                                            {
+                                                background-color: #FDBCDC;
+                                                padding: 12px;
+                                                border-radius: 35px;
+                                                font-family: @poppin-ff;
+                                                font-size: 16px;
+                                                font-weight: 400;
+                                            }
+                                        }
+                                        .name
+                                        {
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: center;
+                                            margin-left: 6px;
+                                            .patient-name
+                                            {
+                                                font-size: 18px;
+                                                font-family: @poppin-ff;
+                                                font-weight: 500;
+                                                color:#000;
+                                            }
+                                            .visit
+                                            {
+                                                color:#F62088;;
+                                                font-weight: 400;
+                                            }
+                                        }
+                                        
+                                    }
+                                    .time
+                                        {
+                                            background-color: #FDBCDC;
+                                            border-radius: 8.4px;
+                                            padding:6px 12px;
+                                            color:#F62088
+                                        }
+                                }
+                                .pat1
+                                {
+                                    margin-top:105px;
+                                }
+                                .pat2
+                                {
+                                    .patient-details
+                                    {
+                                        .border-here
+                                    {
+                                        border:1px solid #BFBFFF;
+                                        .code{
+                                            background-color: #BFBFFF;
+                                        }
+                                    }
+                                    .name
+                                    {
+                                        .visit
+                                        {
+                                            color:#00F
+                                        }
+                                    }
+                                    }
+                                    .time
+                                    {
+                                        background-color: #BFBFFF;
+                                        color:#00F;
+                                    }
+                                }
+                                .pat3
+                                {
+                                    .patient-details
+                                    {
+                                        .border-here
+                                    {
+                                        border:1px solid #C4E2E0;
+                                        .code{
+                                            background-color: #C4E2E0;
+                                        }
+                                    }
+                                    .name
+                                    {
+                                        .visit
+                                        {
+                                            color:#128983;
+                                        }
+                                    }
+                                    }
+                                    .time
+                                    {
+                                        background-color: #C4E2E0;
+                                        color:#128983;;
+                                    }
+                                }
+                            }
+                        }
+                        
+                        .content-2
+                        {
+                            width: 48%;
+                            padding: 24px;
+                            .heading-cons
+                            {
+                                font-size: 24.57px;
+                                    font-family: @poppin-ff;
+                                    font-weight: 500;
+                            }
+                            .under-border
+                            {
+                                margin-top: 23.5px;
+                                border-radius: 16.386px;
+                                border: 1.024px solid rgba(110, 186, 219, 0.5);
+                                padding: 20px;
+                                .detail-pat
+                                {
+                                    display: flex;
+                                    align-items: center;
+                                    .border-here
+                                        {
+                                            border:1px solid #FDBCDC;
+                                            border-radius: 25px;
+                                            padding: 2px;
+                                            .code
+                                            {
+                                                background-color: #FDBCDC;
+                                                padding: 15px 12px;
+                                                border-radius: 35px;
+                                                font-family: @poppin-ff;
+                                                font-size: 16px;
+                                                font-weight: 400;
+                                            }
+                                        }
+                                        .patient-name
+                                        {
+                                            display: flex;
+                                            flex-direction: column;
+                                            margin-left: 5px;
+                                            .name
+                                            {
+                                                font-size: 18px;
+                                                font-family: @poppin-ff;
+                                                font-weight: 500;
+                                                color:#000;
+                                            }
+                                            .dob
+                                            {
+                                                font-size: 12px;
+                                                color: rgba(0, 0, 0, 0.50);
+                                                font-weight: 400;
+                                                margin-top: 5px;
+                                            }
+                                        }
+                                }
+                                .logo-dis
+                                {
+                                    margin-top: 20.48px;
+                                    gap:15px;
+                                    display: flex;
+                                    .single-logo
+                                    {
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+                                        .disease
+                                        {
+                                            font-family: @poppin-ff;
+                                            font-weight: 500;
+                                            font-size: 12.29px;
+                                        }
+                                    }
+                                }
+                                .horiz
+                                {
+                                    margin: 12px 0px;
+                                    border: none;
+                                    height: 2px;
+                                    background-color:rgba(110, 186, 219, 0.5);
+                                    opacity: 0.4;
+                                }
+                                .checkup
+                                {
+                                    display: flex;
+                                    flex-direction: column;
+                                    .last
+                                    {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        gap:8px;
+                                        .last-checkup
+                                        {
+                                            color:#000;
+                                            font-family: @poppin-ff;
+                                            font-weight: 500;
+                                            font-size:11px;
+                                        }
+                                        .doneby
+                                        {
+                                            margin-left: 6px;
+                                            .dates
+                                            {
+                                                color: rgba(0, 0, 0, 0.50);
+                                                font-family: @poppin-ff;
+                                                font-size: 12.49px;
+                                            }
+                                        }
+                                    }
+                                    .mt12
+                                    {
+                                        margin-top: 12px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .right-content
+                {
+                    width: 413px;
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 0;
+                    padding-bottom: 0;
+                    .first-component
+                    {
+                            height: 440px;
+                            border-radius: 15px;
+                            display: flex;
+                            justify-content: center;
+                       	
+:root {
+	--c-theme-primary: #008FFD;
+	--c-theme-primary-accent: #CBE8FF;
+	--c-bg-primary: #D6DAE0;
+	--c-bg-secondary: #EAEBEC;
+	--c-bg-tertiary: #FDFDFD;
+	--c-text-primary: #1F1F25;
+	--c-text-secondary: #999FA6;
+}
+
+body {
+	font-family: "Inter", sans-serif; 
+	line-height: 1.5;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--c-bg-primary);
+	color: var(--c-text-primary);
+}
+
+button {
+	font: inherit;
+	cursor: pointer;
+	&:focus {
+		outline: 0;
+	}
+}
+
+
+.datepicker {
+	width: 95%;
+	max-width: 350px;
+	background-color: var(--c-bg-tertiary);
+	border-radius: 10px;
+	box-shadow: 0 0 2px 0 rgba(#000, .2), 0 5px 10px 0 rgba(#000, .1);
+	padding: 1rem;
+}
+
+.datepicker-top {
+	margin-bottom: 1rem;
+}
+
+.btn-group {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 1rem;
+	margin-top: -.5rem;
+}
+
+.tag {
+	margin-right: .5rem;
+	margin-top: .5rem;
+	border: 0;
+	background-color: var(--c-bg-secondary);
+	border-radius: 10px;
+	padding: .5em .75em;
+	font-weight: 600;
+}
+
+.month-selector {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.arrow {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 0;
+	background-color:#FFF;
+	border-radius: 12px;
+	width: 2.5rem;
+	height: 2.5rem;
+	box-shadow: 0 0 2px 0 rgba(#000,.25), 0 0 10px 0 rgba(#000, .15);
+}
+
+.month-name {
+	font-weight: 600;
+}
+
+.datepicker-calendar {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	grid-row-gap: 1rem;
+}
+
+.day, .date {
+	justify-self: center;
+}
+
+.day {
+	color: var(--c-text-secondary);
+	font-size: .875em;
+	font-weight: 500;
+	justify-self: center;
+}
+
+.date {
+	border: 0;
+	padding: 0;
+	width: 2.25rem;
+	height: 2.25rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 6px;
+	font-weight: 600;
+	border: 2px solid transparent;
+	background-color: transparent;
+	cursor: pointer;
+	&:focus {
+		outline: 0;
+		color: var(--c-theme-primary);
+		border: 2px solid var(--c-theme-primary-accent);	
+	}	
+}
+
+.faded {
+	color: var(--c-text-secondary);
+}
+
+.current-day {
+	color: #FFF;
+	border-color: var(--c-theme-primary);
+	background-color: var(--c-theme-primary);
+	&:focus {
+		background-color: var(--c-theme-primary-accent);
+	}
+}
+
+                    }
+                    .second-component
+                    {
+                        background-color: #FFFFFF;
+                        border-radius: 15px;
+                        height: 350px;
+                        display: flex;
+                        flex-direction: column;
+                        padding: 16px;
+                        .second-comp-daily
+                        {
+                            color: rgba(0, 0, 0, 0.40);
+                            font-size: 12.29px;
+                            font-weight: 400;
+                            font-family: @poppin-ff;
+                            display: flex;
+                            .circle
+                            {
+                                margin-right: 4px;
+                            }
+                        }
+                        .second-comp-headline
+                        {
+                            font-family: @poppin-ff;
+                            font-weight: 600;
+                            font-size: 18.345px;
+                            margin-top: 5px;
+                            margin-bottom: 18px;
+                            line-height: 28px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.admindark
+{
+    .admin;
+    .parent
+    {
+        .right
+        {
+            background-color: black;
+            .navbar
+            {
+                .right-nav
+                {
+                    .right-icon
+                    {
+                        color:white;
+                    }
+                    .profile
+                    {
+                        .admin-name
+                        {
+                            color:#fff;
+                        }
+                    }
+                }
+            }
+            .right-content
+            {
+                .left-content
+                {
+                    .heading
+                    {
+                        color:#fff;
+                    }
+                    .left-content-2
+                    {
+                        background-color: #555;
+                        .content-1
+                        {
+                            .headingContent-1
+                            {
+                                .heading-patient
+                                {
+                                    color:#fff;
+                                }
+                                .dropdown
+                                {
+                                    color:#ffffffaa;
+                                }
+                            }
+                            .patient-list
+                            {
+                                .patient
+                                {
+                                    .patient-details
+                                    {
+                                        .name
+                                        {
+                                            .patient-name
+                                            {
+                                                color:#fff;
+                                            }
+                                        }
+                                    }
+                                }
+                                
+                            }
+                        }
+
+                        .content-2
+                        {
+                            .headingContent-1
+                            {
+                                .heading-cons
+                                {
+                                    color:#fff;
+                                }
+                                .under-border
+                                {
+                                    .detail-pat
+                                    {
+                                        .patient-name
+                                        {
+                                            .name
+                                            {
+                                                color:#fff;
+                                            }
+                                            .dob
+                                            {
+                                                color:#ffffffaa;
+                                            }
+                                        }
+                                    }
+                                    .logo-dis
+                                    {
+                                        .single-logo
+                                        {
+                                            .disease
+                                            {
+                                                color:#fff;
+                                            }
+                                        }
+                                    }
+                                    .checkup
+                                    {
+                                        .last
+                                        {
+                                            .last-checkup
+                                            {
+                                                color:#ffffffcf;
+                                            }
+                                            .doneby
+                                            {
+                                                .dates
+                                                {
+                                                color:#ffffffe1;
+
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .right-content
+                {
+                    .first-component
+                    {
+                       .datepicker
+                       {
+                            background-color: #555;
+                            .datepicker-top
+                            {
+                                .btn-group
+                                {
+                                    .tag
+                                    {
+                                        color:#fff;
+                                    }
+                                }
+                                .month-selector
+                                {
+                                    .month-name
+                                    {
+                                        color:#fff;
+                                    }
+                                }
+                            }
+                            .datepicker-calendar
+                            {
+                                .day
+                                {
+                                    color:#fff;
+                                }
+                                .date
+                                {
+                                    color:#ffffffb4;
+                                }
+                            }
+                       }
+                    }
+                    .second-component
+                    {
+                        background-color: #555;
+                        .second-comp-daily
+                        {
+                            color:#fff;
+                        }
+                        .second-comp-headline
+                        {
+                            color:#fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

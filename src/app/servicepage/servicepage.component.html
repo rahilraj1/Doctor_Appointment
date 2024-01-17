@@ -1,0 +1,151 @@
+<app-navbar />
+<section class="service" [class.servicedark]="dark.isDark"> 
+    <div class="parent">
+        <div class="container">
+            <div class="img-container">
+                <img src="../../assets/Rectangle 1548.png" alt="" class="img-here">
+                <div class="container-text">
+                    <div class="left">
+                        <div class="left-content">
+                            <span class="heading">Meet The Best Hospital</span>
+                            <span class="text">We know how large objects will act,
+                                but things on a small scale.</span>
+                            <div class="btns">
+                                <button class="btn">Get Quote Now</button>
+                                <button class="btn btn2">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="content-form">
+                            <span class="heading">Book Appointment</span>
+                            <div class="form">
+                                <label for="" class="name">Name*</label>
+                                <input type="text" class="input-name" placeholder="Full Name*">
+                                <label for="" class="name">Email*</label>
+                                <input type="text" class="input-name" placeholder="example@gmail.com">
+                                <label for="" class="name">Department*</label>
+                                <input type="text" class="input-name" placeholder="Please Choose">
+                                <label for="" class="name">Time*</label>
+                                <input type="text" class="input-name" placeholder="4:00 Available">
+                                <button class="book">Book Appointment</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="div parent-content">
+            <div class="content">
+                <span class="heading">Find A Doctor</span>
+                <div class="search">
+                    <input type="text" class="name" placeholder="Name">
+                    <input type="text" class="name" placeholder="Speciality">
+                    <span class="avail">Available</span>
+                    <svg class="switch" xmlns="http://www.w3.org/2000/svg" width="63" height="32" viewBox="0 0 63 32"
+                        fill="none">
+                        <rect x="0.5" y="0.5" width="62" height="31" rx="15.5" fill="white" stroke="#007E85" />
+                        <circle cx="46" cy="16" r="13" fill="#007E85" />
+                    </svg>
+                    <button class="search-btn">Search</button>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</section>
+
+<app-jobs />
+
+<section class="customer-section" [class.customerdark]="dark.isDark">
+    <div class="parent3">
+        <div class="customers">
+            <div class="headings">
+                <span class="heading">What Our Customers Say</span>
+                <span class="text">Problems trying to resolve the conflict between the two major realms of Classical
+                    physics: Newtonian mechanics </span>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <span class="comment">Slate helps you see how many
+                        more days you need to work to
+                        reach your financial goal.</span>
+                    <img src="../../assets/BG (3).svg" alt="" class="doctor-img" width="50px">
+                </div>
+                <div class="card">
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-o unchecked"></span>
+                        <span class="fa fa-star-o unchecked"></span>
+                    </div>
+                    <span class="comment">Slate helps you see how many
+                        more days you need to work to
+                        reach your financial goal.</span>
+                    <img src="../../assets/BG (2).svg" alt="" class="doctor-img" width="50px">
+                </div>
+                <div class="card">
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-o unchecked"></span>
+                    </div>
+                    <span class="comment">Slate helps you see how many
+                        more days you need to work to
+                        reach your financial goal.</span>
+                    <img src="../../assets/BG (1).svg" alt="" class="doctor-img" width="50px">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="faq-section" [class.faq-dark]="dark.isDark">
+    <div class="container">
+        <div class="content">
+            <div class="child-content">
+                <span class="heading">FAQ</span>
+                <span class="content2"><span class="upper-text">Problems trying to resolve the conflict between </span>
+                    the two major realms of Classical physics: Newtonian mechanics </span>
+                    <span class="content3">Problems trying to resolve the conflict between
+                    the two major realms of Classical physics: Newtonian mechanics </span>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="cards">
+                <div class="card" *ngFor="let ele of cards">
+                    <div class="left">
+                        <mat-icon class="right-icon">chevron_right</mat-icon>
+                    </div>
+                    <div class="right">
+                        <span class="heading">the quick fox jumps over the 
+                            lazy dog</span>
+                        <span class="text">Things on a very small scale 
+                                behave like nothing </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="main-parent" [class.main-parentdark]="dark.isDark">
+    <div class="parent2">
+        <div class="content">
+            <span class="heading">Subscribe to our newsletter</span>
+            <div class="input-div">
+                <input type="text" class="inp" placeholder="Enter Your Email">
+                <button class="subscribe">Subscribe</button>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">

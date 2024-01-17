@@ -1,0 +1,200 @@
+@lexend-ff: 'Lexend Tera', sans-serif;
+@lato-ff: 'Lato', sans-serif;
+@poppin-ff: 'Poppins', sans-serif;
+@Sans-ff: 'DM Sans', sans-serif;
+@blue-color: #007E85;
+@green-color: #6EAB36;
+@bg-light: #ECECEC;
+
+.firstpage
+{
+    display: flex;
+    justify-content: center;
+    background-color: @bg-light;
+    .parent
+    {
+        max-width: 1440px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        .navbar
+        {
+            .left {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                gap: 35px;
+                .logo {
+                    cursor: pointer;
+                }
+
+                .heading {
+                    font-size: 26px;
+                    font-weight: 800;
+                    cursor: pointer;
+
+                    .blue-color {
+                        color: @blue-color;
+                    }
+
+                    .care {
+                        color: @green-color;
+                    }
+                }
+            }
+
+        }
+        .form
+        {
+            width: 100%;
+            height: 70vh;
+            background-color: #fff;
+            margin: 55px 0px;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .form-content
+            {
+                padding:55px 35px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .heading{
+                    font-family: @poppin-ff;
+                    font-weight: 700;
+                    font-size: 28px;
+                    margin-bottom: 28px;
+                }
+                .input-here
+                {
+                    position: relative;
+                    width: 100%;
+                    margin-bottom: 12px;
+                    margin-top: 12px;
+                    .email
+                    {
+                        padding: 15px 0px;
+                        padding-left: 45px;
+                        border:1px solid #555;
+                        width: 80%;
+                    }
+                    .email::placeholder
+                    {
+
+                    }
+                    .email-icon
+                    {
+                        position: absolute;
+                        left: 5%;
+                        top:27%;
+                        opacity: 0.5;
+                    }
+                    
+                }
+                .admin
+                {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    margin: 16px 0px;
+                    .admin-text
+                    {
+                        font-family: @poppin-ff;
+                        font-size: 14px;
+                        margin-left: 8px;
+                        color:#555;
+                        font-weight: 700;
+                    }
+                }
+                .submit
+                {
+                    padding: 12px 24px;
+                    border-radius: 15px;
+                    background-color: @blue-color;
+                    color:#fff;
+                    font-family: @poppin-ff;
+                    font-size: 14px;
+                    border:1px solid @blue-color;
+                    cursor: pointer;
+                }
+                .signup
+                {
+                    margin-top: 22px;
+                    .already
+                    {
+                        font-family: @poppin-ff;
+                        font-size: 18px;
+                        font-weight: 600;
+                        color:#555;
+                        .signupbtn
+                        {
+                            border:none;
+                            background: transparent;
+                            font-size: 18px;
+                            font-weight: 600;
+                            color:@blue-color;
+                            cursor: pointer;
+                            transition: all 0.2s;
+                            &:hover
+                            {
+                                color:#555;
+                            }
+                        }
+                    }
+                }
+                .admin-login
+                {
+                    .already
+                    {
+                        font-size: 15px;
+                        .signupbtn
+                        {
+                            font-size: 15px;
+                            margin-left: 4px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.firstpagedark
+{
+    .firstpage;
+    background-color: black;
+    .parent
+    {
+        .navbar
+        {
+            .left
+            {
+                .heading
+                {
+                    color:white;
+                }
+            }
+        }
+        .form
+        {
+            background-color: #555;
+            .form-content
+            {
+                .heading
+                {
+                    color:#fff;
+                }
+                .signup
+                {
+                    .already
+                    {
+                        color:#fff;
+                    }
+                }
+            }
+        }
+    }
+}

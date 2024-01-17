@@ -1,0 +1,397 @@
+@Sans-ff: 'DM Sans', sans-serif;
+@blue-color: #007E85;
+@green-color: #6EAB36;
+@bg-light: #ECECEC;
+
+.team {
+    display: flex;
+    justify-content: center;
+    background-color: @bg-light;
+
+    .parent {
+        max-width: 1440px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 122px;
+
+        .upside {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 86.12%;
+
+            .heading {
+                font-family: @Sans-ff;
+                color: @blue-color;
+                font-size: 36px;
+                font-weight: 700;
+                margin-bottom: 16px;
+                text-align: center;
+                line-height: 36px;
+            }
+
+            .text {
+                color: #555;
+                font-family: @Sans-ff;
+                font-weight: 400;
+                font-size: 18px;
+                width: 42.56%;
+                text-align: center;
+                margin-bottom: 60px;
+
+                @media(max-width:1025px) {
+                    width: 90% !important;
+                    margin-top: 16px;
+                    line-height: 22px;
+                }
+            }
+        }
+
+        .downside {
+            max-width: 1280px;
+            padding: 0px 30px;
+            margin: auto;
+
+            .cards {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                .card {
+                    width: 32%;
+                    background-color: white;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 24px;
+                    margin-bottom: 56px;
+
+                    .card-img {
+                        margin-top: 40px;
+                        margin-bottom: 40px;
+                        width: 160px;
+
+                        @media(max-width:1025px) {
+                            width: 90px;
+                            margin: 22px 0px;
+                        }
+                        @media(max-width:768px) {
+                            width: 75px;
+                            margin: 18px 0px;
+                        }
+                    }
+
+                    .heading {
+                        font-family: @Sans-ff;
+                        color: @blue-color;
+                        font-size: 28px;
+                        font-weight: 700;
+                        margin-bottom: 8px;
+
+                        @media(max-width:1025px) {
+                            font-size: 24px;
+                            margin-bottom: 6px;
+                        }
+                        
+                    }
+
+                    .profile {
+                        font-family: @Sans-ff;
+                        font-size: 18px;
+                        color: #555;
+                        font-weight: 600;
+                        margin-bottom: 15px;
+
+                        @media(max-width:1025px) {
+                            font-size: 14px;
+                            margin-bottom: 3px;
+                            font-weight: 600;
+                        }
+                    }
+
+                    .text {
+                        width: 83%;
+                        color: #555;
+                        font-family: @Sans-ff;
+                        font-size: 18px;
+                        font-weight: 400;
+                        text-align: center;
+                        line-height: 30px;
+                        margin-bottom: 32px;
+
+                        @media(max-width:1025px) {
+                            font-size: 14px;
+                            margin-bottom: 6px;
+                            line-height:normal;
+                            margin-bottom: 24px;
+                            width: 90%;
+                        }
+                    }
+
+                    .social {
+                        margin-bottom: 56px;
+
+                        .icons2 {
+                            margin-left: 8px;
+                            cursor: pointer;
+                        }
+
+                        @media(max-width:1025px) {
+                            margin-bottom: 18px;
+                            .icons
+                            {
+                                width: 24px;
+                            }
+                        }
+                    }
+                }
+                @media(max-width:1025px) {
+                    display: flex;
+                    justify-content: space-around;
+                    gap: 18px;
+                    .card
+                    {
+                        width: 31% !important;
+                        .heading
+                        {
+                            font-size: 24px;
+                            margin-bottom: 10px;
+                        }
+                        .profile
+                        {
+                            font-size: 18px;
+                            margin: 10px 0px;
+                        }
+                        .text
+                        {
+                            font-size: 16px;
+                            line-height: 32px;
+                        }
+                    }
+                }
+                @media(max-width:768px)
+                {
+                    .card
+                    {
+                        width: 47% !important;
+                         .heading
+                        {
+                            font-size: 20px;
+                            margin-bottom: 8px;
+                        }
+                        .profile
+                        {
+                            font-size: 16px;
+                            margin: 10px 0px;
+                        }
+                        .text
+                        {
+                            font-size: 14px;
+                            line-height: 24px;
+                        }
+                    }
+                }
+                @media(max-width:525px)
+                {
+                    .card
+                    {
+                        width: 90% !important;
+                    }
+                }
+            }
+        }
+
+        .testimonal {
+            max-width: 1280px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px 30px;
+
+            .upside {
+                .heading {
+                    font-family: @Sans-ff;
+                    color: @blue-color;
+                    font-weight: 700;
+                    font-size: 36px;
+                    margin-top: 40px;
+                }
+
+                .context {
+                    font-family: @Sans-ff;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 30px;
+                    color: #555;
+                    width: 49.43%;
+                    text-align: center;
+                    margin-bottom: 50px;
+
+                    @media(max-width:1120px) {
+                        width: 60%;
+                    }
+
+                    @media(max-width:1025px) {
+                        width: 70%;
+                    }
+
+                    @media(max-width:768px) {
+                        width: 90%;
+                    }
+                }
+            }
+
+            .cards {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                .card {
+                    width: 32%;
+                    background-color: white;
+                    display: flex;
+                    flex-direction: column;
+                    border-radius: 24px;
+                    margin-bottom: 56px;
+
+                    .card-img {
+                        margin-top: 50px;
+                        margin-left: 40px;
+                        width: 80px;
+                    }
+
+                    .heading {
+                        font-family: @Sans-ff;
+                        color: #333;
+                        font-size: 22px;
+                        font-weight: 700;
+                        margin: 12px 40px 0px 20px;
+
+                        @media(max-width:1096px) {
+                            font-size: 20px;
+                            margin: 12px 30px 0px 20px;
+                        }
+                    }
+
+                    .context {
+                        font-family: @Sans-ff;
+                        font-size: 18px;
+                        color: #555;
+                        font-weight: 400;
+                        margin: 12px 40px 0px 20px;
+
+                        @media(max-width:1120px) {
+                            font-size: 16px;
+                        }
+                    }
+
+                    .name {
+                        margin-top: 32px;
+                        font-family: @Sans-ff;
+                        color: @blue-color;
+                        font-weight: 700;
+                        font-size: 18px;
+                        margin: 12px 40px 0px 20px;
+
+                        @media(max-width:1025px) {
+                            font-size: 14px;
+                        }
+                    }
+
+                    .company {
+                        margin-top: 8px;
+                        font-family: @Sans-ff;
+                        font-size: 18px;
+                        font-weight: 400px;
+                        margin: 12px 40px 50px 20px;
+                        color: #555;
+
+                        @media(max-width:1025px) {
+                            font-size: 14px;
+                        }
+                    }
+                }
+                @media(max-width:768px)
+                {
+                    display: flex;
+                    justify-content: space-around;
+                    .card
+                    {
+                        width: 45%;
+                    }
+                }
+                @media(max-width:575px)
+                {
+                    .card
+                    {
+                        width: 90% !important;
+                    }
+                }
+            }
+        }
+    }
+}
+.teamdark
+{
+    .team;
+    background-color: black;
+    .parent
+    {
+        .upside
+        {
+            .text
+            {
+                color:#fff;
+            }
+        }
+        .downside
+        {
+            .cards
+            {
+                .card
+            {
+                background-color: #555;
+                .text
+                {
+                    color:#fff;
+                }
+            }
+            }
+        }
+        .testimonal
+        {
+            .upside
+            {
+                .context
+                {
+                    color:#fff;
+                }
+            }
+            .cards
+            {
+                .card
+                {
+                    background-color: #555;
+                    .heading
+                    {
+                        color:#fff;
+                    }
+                    .context
+                    {
+                        color:#fff;
+                    }
+                    .name
+                    {
+                        color:#fff;
+                    }
+                }
+            }
+        }
+    }
+}

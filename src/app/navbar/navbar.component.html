@@ -1,0 +1,44 @@
+<section  [ngClass]="isDark?'navbarbg' : 'navbar'">
+    <div class="parent">
+        <div class="nav">
+            <div class="left" >
+                <mat-icon class="menu" (click)="onMenu()">menu</mat-icon>
+                <img src="../../assets/image 16.png" alt="" class="logo" routerLink="/">
+                <span class="heading" routerLink="/"><span class="blue-color">Health</span><span class="care">care</span></span>
+            </div>
+            <ul class="mid" >
+                <li class="list"><a routerLink="/" class="anc" >Home</a></li>
+                <li class="list"><a routerLink="/services" class="anc" >Services</a></li>
+                <li class="list"> <a routerLink="/contact" class="anc" >Contact Us</a></li>
+                <li class="list"><a roterLink="/" class="anc">Help</a></li>
+                <li class="list"><a routerLink="/" class="anc" >Blogs</a></li>
+                <mat-icon class="dark" *ngIf="isDark==false" (click)="onDarkClick()">dark_mode</mat-icon>
+                <mat-icon class="light" *ngIf="isDark==true" (click)="onDarkClick()">light_mode</mat-icon>
+            </ul>
+            <div class="right">
+                <button class="btn-pad" [ngClass]="{'log-in':isLogin==false, 'sign-up':isLogin==true}"
+                    (click)="onLogin()" routerLink="/signin">Sign Up</button>
+                <button class="btn-pad" [ngClass]="{'log-in':isLogin==true, 'sign-up':isLogin==false}"
+                    (click)="onLogin()" routerLink="/login">Log In</button>
+            </div>
+            <div class="pop-up" *ngIf="isMenu==true">
+                <div class="upside">
+                <img src="../../assets/image 16.png" alt="" class="logo">
+                <mat-icon class="close" (click)="onMenu()">close</mat-icon>
+                </div>
+                <div class="div-list">
+                    <li class="list"><a routerLink="/" class="anc"  (click)="onMenu()">Home</a></li>
+                    <hr class="horiz">
+                    <li class="list"><a routerLink="/services" class="anc" (click)="onMenu()">Services</a></li>
+                    <hr class="horiz">
+                    <li class="list"> <a routerLink="/contact" class="anc" (click)="onMenu()">Contact Us</a></li>
+                    <hr class="horiz">
+                    <li class="list"><a roterLink="/" class="anc" (click)="onMenu()">Help</a></li>
+                    <hr class="horiz">
+                    <li class="list"><a routerLink="/" class="anc" (click)="onMenu()">Blogs</a></li>
+                    <hr class="horiz">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

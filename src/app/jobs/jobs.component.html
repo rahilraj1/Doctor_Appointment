@@ -1,0 +1,22 @@
+<section class="jobs" [class.jobsdark]="dark.isDark">
+    <div class="parent">
+        <div class="upside">
+            <span class="heading">Services we provide</span>
+            <span class="text">Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar elementum tempus hac tellus libero accumsan. </span>
+        </div>
+        <div class="downside">
+            <div class="cards">
+                <div class="card" *ngFor="let ele of cards">
+                    <div class="img-div">
+                    <img src={{ele.imgUrl}} alt="" class="card-img">
+                    </div>
+                    <span class="heading">{{ele.heading}}</span>
+                    <span class="parag">Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalaracc lacus vel facilisis volutpat est velitolm.</span>
+                    <button class="learn">Learn More
+                        <mat-icon class="right-arw">arrow_right_alt</mat-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

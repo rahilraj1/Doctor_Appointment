@@ -1,0 +1,47 @@
+<section class="firstpage" [class.firstpagedark]="dark.isDark">
+    <div class="parent">
+        <section class="navbar">
+            <div class="left" routerLink="/">
+                <img src="../../assets/image 16.png" alt="" class="logo">
+                <span class="heading"><span class="blue-color">Health</span><span class="care">care</span></span>
+            </div>
+        </section>
+        <section class="form">
+            <div class="form-content" *ngIf="isSign==false">
+                <span class="heading">Login Admin</span>
+                <div class="input-here">
+                    <input type="text" class="email" placeholder="Email...">
+                    <mat-icon class="email-icon">mail</mat-icon>
+                </div>
+                <div class="input-here">
+                    <input type="password" class="email" placeholder="Password...">
+                    <mat-icon class="email-icon">lock</mat-icon>
+                </div>
+                <button class="submit" routerLink="/admin">Log In</button>
+                <div class="signup">
+                    <span class="already">Don't have an account? <button class="signupbtn" (click)="onSignUp()">Sign Up.</button></span>
+                </div>
+            </div>
+            <div class="form-content" *ngIf="isSign==true">
+                <span class="heading">SignUp</span>
+                <div class="input-here">
+                    <input type="text" class="email" placeholder="Email...">
+                    <mat-icon class="email-icon">mail</mat-icon>
+                </div>
+                <div class="input-here">
+                    <input type="password" class="email" placeholder="Create Password...">
+                    <mat-icon class="email-icon">lock</mat-icon>
+                </div>
+                <div class="admin">
+                    <input type="checkbox" class="check">
+                    <span class="admin-text">Admin</span>
+                </div>
+                <button class="submit" routerLink="/home">Sign Up</button>
+                <div class="signup">
+                    <span class="already">Already have an account? <button class="signupbtn" (click)="onLogIn()">Log In</button></span>
+                </div>
+            </div>
+            
+        </section>
+    </div>
+</section>

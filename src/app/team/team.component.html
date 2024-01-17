@@ -1,0 +1,55 @@
+<section class="team" [class.teamdark]="dark.isDark">
+    <div class="parent">
+        <div class="upside">
+            <span class="heading">
+                Meet Our Team Members
+            </span>
+            <span class="text">Lorem ipsum dolor sit amet consectetur adipiscing elit volutpat gravida malesuada quam commodo id integer nam.</span>
+        </div>
+        <div class="downside">
+            <div class="cards">
+                <div class="card" *ngFor="let ele of data">
+                    <img src={{ele.imgUrl}} alt="" class="card-img">
+                    <span class="heading">{{ele.name}}</span>
+                    <span class="profile">{{ele.profile}}</span>
+                    <span class="text">Lorem ipsum dolor sit amet consecte adipiscing elit amet hendrerit pretium nulla sed enim iaculis mi. </span>
+                    <div class="social">
+                        <img src="../../assets/Facebook.svg" alt="" class="icons">
+                        <img src="../../assets/Twitter.svg" alt="" class="icons icons2">
+                        <img src="../../assets/Instagram.svg" alt="" class="icons icons2">
+                        <img src="../../assets/LinkedIn.svg" alt="" class="icons icons2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonal">
+            <div class="upside">
+                <span class="heading">Testimonal</span>
+                <span class="context">Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar elementum tempus hac tellus libero accumsan. </span>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <img src="../../assets/BG_Test.svg" alt="" class="card-img">
+                    <span class="heading">&ldquo;An Amazing Service&rdquo;</span>
+                    <span class="context">Lorem ipsum dolor sit ametolil col consectetur adipiscing lectus a nunc mauris scelerisque sed egestas.</span>
+                    <span class="name">John Carter</span>
+                    <span class="company">CEO At Google</span>
+                </div>
+                <div class="card">
+                    <img src="../../assets/BG_Test (1).svg" alt="" class="card-img">
+                    <span class="heading">&ldquo;One Of A Kind Service&rdquo;</span>
+                    <span class="context">Lorem ipsum dolor sit ametolil col consectetur adipiscing lectus a nunc mauris scelerisque sed egestas.</span>
+                    <span class="name">Sophie Moore</span>
+                    <span class="company">MD At Facebook</span>
+                </div>
+                <div class="card">
+                    <img src="../../assets/BG_Test (2).svg" alt="" class="card-img">
+                    <span class="heading">&ldquo;The Best Service&rdquo;</span>
+                    <span class="context">Lorem ipsum dolor sit ametolil col consectetur adipiscing lectus a nunc mauris scelerisque sed egestas.</span>
+                    <span class="name">Andy Smith</span>
+                    <span class="company">CEO At Austere</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

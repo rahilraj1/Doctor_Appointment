@@ -1,0 +1,65 @@
+<app-navbar />
+<section class="contact" [class.contentdark]="dark.isDark">
+    <div class="parent">
+        <div class="contact-img">
+            <img src="../../assets/Rectangle 1548.png" alt="" class="img-here">
+        </div>
+        <div class="contact-headings">
+            <span class="mini-heading">Get In Touch</span>
+            <span class="heading">Contact Us</span>
+            <span class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span>
+        </div>
+        <div class="contact-form">
+            <div class="form-here">
+                <div class="inp-label">
+                    <label for="" class="name">First Name</label>
+                    <input type="text" class="name-inp" placeholder="Enter Your First Name">
+                </div>
+                <div class="inp-label">
+                    <label for="" class="name">Last Name</label>
+                    <input type="text" class="name-inp" placeholder="Enter Your Last Name">
+                </div>
+                <div class="inp-label">
+                    <label for="" class="name">Email</label>
+                    <input type="text" class="name-inp" placeholder="Enter Your Email">
+                </div>
+                <div class="inp-label">
+                    <label for="" class="name">Phone number</label>
+                    <input type="text" class="name-inp" placeholder="Enter Your Phone Number">
+                </div>
+                <div class="drop-label">
+                    <label for="" class="topics">Choose a topic</label>
+                    <select name="" id="" class="options">
+                        <option value="">Choose One</option>
+                        <option value="">Eye Checkup</option>
+                        <option value="">Dental Checkup</option>
+                        <option value="">Heart Health Checkup</option>
+                    </select>
+                </div>
+                <div class="drop-label">
+                    <label for="" class="topics">Message</label>
+                    <textarea name="" id="" cols="30" rows="10" class="text-area" placeholder="Type Your Message..."></textarea>
+                </div>
+                <div class="accept">
+                    <input type="checkbox" unchecked="unchecked" class="check-box">
+                    <span class="text">I accept the terms</span>
+                </div>
+                <div class="submit">
+                    <button class="btn">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="main-parent" [class.main-parentdark]="dark.isDark">
+    <div class="parent2">
+        <div class="content">
+            <span class="heading">Subscribe to our newsletter</span>
+            <div class="input-div">
+                <input type="text" class="inp" placeholder="Enter Your Email">
+                <button class="subscribe">Subscribe</button>
+            </div>
+        </div>
+    </div>
+</section>
+<app-footer />

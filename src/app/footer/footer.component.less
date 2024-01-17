@@ -1,0 +1,202 @@
+@Sans-ff: 'DM Sans', sans-serif;
+@lexend-ff: 'Lexend Tera', sans-serif;
+@blue-color: #007E85;
+@green-color: #6EAB36;
+@bg-light: #ECECEC;
+
+.content
+{
+    display: flex;
+    justify-content: center;
+    background-color: @blue-color;
+    .parent
+    {
+        max-width: 1440px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .content
+        {
+            width: 84.73%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 103px;
+            .left
+            {
+                width: 24%;
+                .headings
+                {
+                    margin-top: 85px;
+                    display: flex;
+                    align-items: center;
+                    .logo
+                    {
+                        width: 55px;
+                        margin-right: 4px;
+                    }
+                    .heading
+                    {
+                        font-family: @lexend-ff;
+                        font-weight: 600;
+                        color:#fff;
+                        font-size: 26px;
+                    }
+                }
+                .text
+                {
+                    width: 265px;
+                    margin-top: 17.35px;
+                    .text-content
+                    {
+                        font-family: @Sans-ff;
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 30px;
+                        color:#fff;
+                    }
+                }
+            }
+            .right
+            {
+                width: 61.24%;
+                display: flex;
+                justify-content: space-between;
+                .first
+                {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 100px;
+                    .heading
+                    {
+                        font-family: @Sans-ff;
+                        font-size: 20px;
+                        font-weight: 700;
+                        line-height: 20px;
+                        margin-bottom: 42px;
+                        color:#fff;
+                    }
+                    .list
+                    {
+                        font-family: @Sans-ff;
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 18px;
+                        margin-bottom: 18px;
+                        color:#fff;
+                    }
+                }
+                .follow
+                {
+                    .list
+                    {
+                        display: flex;
+                        align-items: center;
+                        .name
+                        {
+                            margin-left: 8px;
+                        }
+                    }
+                }
+            }
+            .text2
+            {
+                width: 90%;
+                text-align: center;
+                margin-top: 28px; 
+                display: none;
+                .text-content
+                    {
+                        font-family: @Sans-ff;
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 30px;
+                        color:#fff;
+                    }
+                @media(max-width:1025px)
+                {
+                    display: block;
+                }
+            }
+            @media(max-width:1025px)
+            {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .left
+                {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .text
+                    {
+                        display: none;
+                    }
+                    .text2
+                    {
+                        display: block;
+                    }
+                }
+                .right
+                {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-around;
+                }
+            }
+            @media(max-width:768px)
+            {
+                display: flex;
+                flex-direction: column;
+                align-items: center !important;
+                width: 98% !important;
+                .right
+                {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-top: 36px;
+                    width: 100% !important;
+                    .first
+                    {
+                        display: flex;
+                        justify-content: space-between;
+                         align-items: center;
+                        width: 45%;
+                        margin-top: 28px;
+                        .heading
+                        {
+                            font-size:28px;
+                        }
+                        .list
+                        {
+                            font-size: 22px;
+                            line-height: 44px;
+                        }
+                    }
+                }
+            }
+            @media(max-width:426px)
+            {
+                .right
+                {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+.contentdark
+{
+    .content;
+     background-color: #555;
+     .parent
+     {
+        .content
+        {
+        background-color: #555;
+        }
+     }
+}
